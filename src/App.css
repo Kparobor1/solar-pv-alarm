@@ -1,0 +1,38 @@
+
+/* Chart container styling */
+.chart-container {
+  position: relative;
+  max-height: 400px;
+  width: 100%;
+}
+
+/* Smooth table row transitions */
+.table-hover tbody tr:hover {
+  transition: background-color 0.3s ease;
+}
+
+/* Card hover effect */
+.card {
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Textarea styling */
+textarea.form-control {
+  resize: vertical;
+}
+
+/* Animated counter for dashboard */
+@keyframes counter {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate__animated.animate__flipInX {
+  animation: counter 1s ease-in-out;
+}
+
+.min-vh-100 {
+  min-height: 100vh;
+}
